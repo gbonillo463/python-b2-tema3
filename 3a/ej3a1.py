@@ -1,5 +1,5 @@
 """
-Enunciado:
+Enunciado: 
 Desarrolla un sistema orientado a objetos en Python que permita gestionar productos de diferentes categorías (Libros,
 Electrónicos y Ropa) en un pedido. Cada tipo de producto deberá incluir métodos específicos para describir sus
 atributos únicos, así como un mecanismo para ajustar y obtener el precio, asegurando que este no sea negativo. El
