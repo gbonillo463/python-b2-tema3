@@ -12,7 +12,7 @@ la convertida en Fahrenheit, para verificar los resultados.
 
 Instrucciones:
     - Crea una función lambda que convierta temperaturas de Celsius a Fahrenheit. La fórmula para 
-    la conversión es: F = (C * 9/5) + 32
+    la conversión es: F = (celsius * 9/5) + 32
     - Utiliza la función filter para seleccionar las temperaturas en Celsius menores a 60, ya que
     los registros mayores a 60 se deben a errores en la medición.
     - Utiliza la función map para aplicar tu función lambda a una lista de temperaturas en Celsius, 
@@ -27,10 +27,10 @@ Ejemplo de Salida Esperada:
 """
 
 temperatures_celsius = [54, 84, 38, 104, 101, 107, 55, 1, 38, 31, 109, 6, 91, 46, 16, 28, 74, 102, 20, 39]
-filter_temperatures_celsius = list(filter(lambda x:))
-convert_to_fahrenheit = lambda celsius: 
-temperatures_fahrenheit = list(map())
+filter_temperatures_celsius = list(filter(lambda x: x, temperatures_celsius))
+convert_to_fahrenheit = lambda celsius: (celsius * 9/5) + 32 
+temperatures_fahrenheit = list(map(convert_to_fahrenheit, temperatures_celsius))
 
 # Para probar el código, descomenta las siguientes líneas
-# print("Temperatures in Celsius:", temperatures_celsius)
-# print("Temperatures in Fahrenheit:", temperatures_fahrenheit)
+print("Temperatures in Celsius:", temperatures_celsius)
+print("Temperatures in Fahrenheit:", temperatures_fahrenheit)
